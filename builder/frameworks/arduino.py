@@ -28,4 +28,4 @@ from SCons.Script import DefaultEnvironment, SConscript
 
 SConscript(
     join(DefaultEnvironment().PioPlatform().get_package_dir(
-        "framework-arduinoespressif8266"), "tools", "platformio-build.py"))
+        "framework-arduinoespressif8266-threads"), "tools", "platformio-build.py"))

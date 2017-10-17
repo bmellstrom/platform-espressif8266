@@ -1,6 +1,6 @@
 {
-  "name": "espressif8266_stage",
-  "title": "Espressif 8266 (Stage)",
+  "name": "espressif8266_threads",
+  "title": "Espressif 8266 with multi-threading",
   "description": "Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.",
   "url": "https://espressif.com/",
   "homepage": "http://platformio.org/platforms/espressif8266",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/platformio/platform-espressif8266.git"
   },
-  "version": "1.5.0-alpha.3",
+  "version": "1.5.0-alpha.3-threads.1",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "http://dl.platformio.org/packages/manifest.json",
@@ -21,7 +21,7 @@
   ],
   "frameworks": {
     "arduino": {
-      "package": "framework-arduinoespressif8266",
+      "package": "framework-arduinoespressif8266-threads",
       "script": "builder/frameworks/arduino.py"
     },
     "simba": {
@@ -38,10 +38,10 @@
       "type": "toolchain",
       "version": "~1.40802.0"
     },
-    "framework-arduinoespressif8266": {
+    "framework-arduinoespressif8266-threads": {
       "type": "framework",
       "optional": true,
-      "version": "https://github.com/esp8266/Arduino.git"
+      "version": "https://github.com/bmellstrom/esp8266-arduino-threads"
     },
     "framework-esp8266-rtos-sdk": {
       "type": "framework",

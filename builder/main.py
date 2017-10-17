@@ -110,7 +110,7 @@ env.Replace(
     #
 
     FRAMEWORK_ARDUINOESP8266_DIR=platform.get_package_dir(
-        "framework-arduinoespressif8266"),
+        "framework-arduinoespressif8266-threads"),
     SDK_ESP8266_DIR=platform.get_package_dir("sdk-esp8266"),
 
     #
